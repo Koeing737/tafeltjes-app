@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daan's Tafeltjes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="stats">
+            <span id="streak">Streak: 0</span>
+            <span id="highscore">Highscore: 0</span>
+            <span id="time-saved">Gespaarde Tijd: 0s</span>
+        </div>
+        <div class="table-select">
+            <label for="tableDropdown">Kies je tafels:</label>
+            <select id="tableDropdown" multiple></select>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="question" class="question"></div>
+        <input type="number" id="answer" placeholder="Typ je antwoord">
+        <button id="submitBtn">Check</button>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
