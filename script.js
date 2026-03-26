@@ -46,7 +46,7 @@ submitBtn.addEventListener('click', () => {
         feedbackEl.textContent = '✅ Correct!';
         streak++;
         if(streak > highscore) highscore = streak;
-        timeSaved += 2; // voorbeeld waarde
+        timeSaved += 2;
         updateStats();
         newQuestion();
     } else {
